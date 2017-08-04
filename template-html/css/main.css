@@ -33,6 +33,11 @@ article header{
     padding: 20px 40px;
     background-color: #E2E0FA;
 }
+article header::after{
+    content: " - Article posted by Roxana Ungureanu";
+    font-size: 10px;
+    font-style: italic;
+}
 
 .container {
     width: 900px;
@@ -94,6 +99,7 @@ nav ul li {
 nav ul li:hover{
     background-color: #4E497B;
     text-shadow: 1px 1px 1px #A9A7BB;
+
 }
 
 nav ul li:active{
@@ -118,6 +124,7 @@ p{
 }
 
 .allContent {
+
     width: calc(65% + 10px);
     float: right;
 }
@@ -131,6 +138,101 @@ p{
     display: flex;
     flex-direction: column;
 }
+.subscribe-button{
+    font-style: inherit;
+    font-size: 16px ;
+    background-color: #4E497B;
+    color: #E2DFFA;
+    border: none;
+    padding: 10px;
+    display:inline-block ;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #282640 ;
+    border-radius: 2px;
+
+    width: 100%;
+}
+.center-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.email-input{
+    background-color: inherit;
+    border: none;
+    border-bottom: solid 2px #A9A7BB;
+    margin-bottom: 5px;
+    width: 100%;
+    transition: border 0.3s;
+
+}
+.subscribe-box{
+    border: solid 1px #888888;
+    margin: 10px;
+}
+.motto{
+    font-style: italic;
+
+}
+.email-input:focus {
+    outline: none;
+    border-bottom: solid 2px #4E497B;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 1px 3px;
+    background-color: #4E497B;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 10px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 10px;
+    background-color: #4E497B;
+    color: white;
+    font-size: 7px !important;
+    line-height: 10px;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 15%;
+    padding: 0;
+    border: 1px solid #282640;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+
+}
+
+
 
 @media only screen and (max-width: 800px){
     .container{
