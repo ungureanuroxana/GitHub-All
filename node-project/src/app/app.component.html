@@ -1,0 +1,10 @@
+<ul>
+  <!--<li *ngFor="let product of products">-->
+    <!--{{product.title}}, {{product.description}} - {{product.price}}|currency('Ron')-->
+  <!--</li>-->
+
+  <app-product *ngFor="let product of products" [productValue]="product">
+
+  </app-product>
+</ul>
+<button (click)="onAdd()">Add Product</button>
